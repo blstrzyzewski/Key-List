@@ -101,10 +101,9 @@ this.trackOptions=function(){
 
 this.sortPlaylist=function (){
   //sorts playlist by key and mode of tracks
+   
   if (this.idListMod.length===0){return;}
-  let finalPlaylist=[];
-  let blockEnd=true;
-  let indexBegin,indexEnd=0;
+
   let index=0;
   this.uriList=[];
   this.sortedPlaylist=[];
@@ -113,7 +112,6 @@ this.sortPlaylist=function (){
   this.sortedPlaylist[0]=this.idListMod[0];
   ele=this.idListMod.shift();
   this.uriList.push(ele.uri);
-  let trigger=1;
   let pitchShift=[0,7,-7,-5,5];
   for(let i=0;i<iterlength;i++){
       //try all compatible pitch shifts
