@@ -301,6 +301,7 @@ var access_token = params.access_token,
 
 else if (access_token){
     //generate user object when access token is created from login
+  window.history.pushState("", "", "/");
   profile= new user(access_token)
   ReactDOM.render(
     <FetchPlaylists />,
