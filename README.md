@@ -1,6 +1,6 @@
 # Key-List
 
-### Check it out [here](https://blooming-plains-67960.herokuapp.com)
+### Check it out [here](https://keyplaylist.com)
 
 Web app that uses the Spotify API to make playlists based on the audio features and key of songs in your library.
 
